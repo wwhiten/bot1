@@ -34,77 +34,77 @@ llink_series = []
 text_series = []
 links_series_w = []
 
-# url_tests_1 = f'https://puzzle-english.com/level-test/english-grammar-test'
-# response_tests_1 = requests.get(url_tests_1)
-# soup_tests_1 = BeautifulSoup(response_tests_1.text, 'lxml')
-# links_tests_1 = soup_tests_1.find_all(class_="col-xs-12 puzzle-col-smx-6 col-sm-3 puzzle_mb_20")
-# link_tests_1 = []
-# text_tests_1 = []
-# texts_tests_1 = []
-# for i in range(len(links_tests_1)):
-#     link_tests_1.append(f'https://puzzle-english.com{links_tests_1[i].find("a").get("href")}')
-# for i in range(len(link_tests_1)):
-#     url_tests1 = link_tests_1[i]
-#     response_tests1 = requests.get(url_tests1)
-#     soup_tests1 = BeautifulSoup(response_tests1.text, 'lxml')
-#     text_tests_1.append(soup_tests1.find_all('span'))
-#     if i != 0:
-#         texts_tests_1.append(f'{i}. {text_tests_1[i][4].text}')
-# string_tests_1 = '\n'.join(texts_tests_1)
-#
-# url_tests_2 = f'https://puzzle-english.com/level-test/english-grammar-test'
-# response_tests_2 = requests.get(url_tests_2)
-# soup_tests_2 = BeautifulSoup(response_tests_2.text, 'lxml')
-# links_tests_2 = soup_tests_1.find_all(class_="col-xs-12 puzzle-col-smx-6 col-sm-3 puzzle_mb_20")
-# link_tests_2 = []
-# text_tests_2 = []
-# texts_tests_2 = []
-# for i in range(len(links_tests_2)):
-#     link_tests_2.append(f'https://puzzle-english.com{links_tests_1[i].find("a").get("href")}')
-# for i in range(len(link_tests_2)):
-#     url_tests2 = link_tests_2[i]
-#     response_tests2 = requests.get(url_tests2)
-#     soup_tests2 = BeautifulSoup(response_tests2.text, 'lxml')
-#     text_tests_2.append(soup_tests2.find_all('span'))
-#     if i != 0:
-#         texts_tests_2.append(f'{i}. {text_tests_1[i][4].text}')
-# string_tests_2 = '\n'.join(texts_tests_2)
-#
-# url_tests_3 = f'https://puzzle-english.com/level-test/english-grammar-test'
-# response_tests_3 = requests.get(url_tests_3)
-# soup_tests_3 = BeautifulSoup(response_tests_3.text, 'lxml')
-# links_tests_3 = soup_tests_3.find_all(class_="col-xs-32 puzzle-col-smx-6 col-sm-3 puzzle_mb_20")
-# link_tests_3 = []
-# text_tests_3 = []
-# texts_tests_3 = []
-# for i in range(len(links_tests_3)):
-#     link_tests_3.append(f'https://puzzle-english.com{links_tests_3[i].find("a").get("href")}')
-# for i in range(len(link_tests_3)):
-#     url_tests3 = link_tests_3[i]
-#     response_tests3 = requests.get(url_tests3)
-#     soup_tests3 = BeautifulSoup(response_tests3.text, 'lxml')
-#     text_tests_3.append(soup_tests3.find_all('span'))
-#     if i != 0:
-#         texts_tests_3.append(f'{i}. {text_tests_3[i][4].text}')
-# string_tests_3 = '\n'.join(texts_tests_3)
-#
-# url_tests_4 = f'https://puzzle-english.com/level-test/english-grammar-test'
-# response_tests_4 = requests.get(url_tests_4)
-# soup_tests_4 = BeautifulSoup(response_tests_4.text, 'lxml')
-# links_tests_4 = soup_tests_4.find_all(class_="col-xs-42 puzzle-col-smx-6 col-sm-4 puzzle_mb_20")
-# link_tests_4 = []
-# text_tests_4 = []
-# texts_tests_4 = []
-# for i in range(len(links_tests_4)):
-#     link_tests_4.append(f'https://puzzle-english.com{links_tests_4[i].find("a").get("href")}')
-# for i in range(len(link_tests_4)):
-#     url_tests4 = link_tests_4[i]
-#     response_tests4 = requests.get(url_tests4)
-#     soup_tests4 = BeautifulSoup(response_tests4.text, 'lxml')
-#     text_tests_4.append(soup_tests4.find_all('span'))
-#     if i != 0:
-#         texts_tests_4.append(f'{i}. {text_tests_4[i][4].text}')
-# string_tests_4 = '\n'.join(texts_tests_4)
+url_tests_1 = f'https://puzzle-english.com/level-test/english-grammar-test'
+response_tests_1 = requests.get(url_tests_1)
+soup_tests_1 = BeautifulSoup(response_tests_1.text, 'lxml')
+links_tests_1 = soup_tests_1.find_all(class_="col-xs-12 puzzle-col-smx-6 col-sm-3 puzzle_mb_20")
+link_tests_1 = []
+text_tests_1 = []
+texts_tests_1 = []
+for i in range(len(links_tests_1)):
+    link_tests_1.append(f'https://puzzle-english.com{links_tests_1[i].find("a").get("href")}')
+for i in range(len(link_tests_1)):
+    url_tests1 = link_tests_1[i]
+    response_tests1 = requests.get(url_tests1)
+    soup_tests1 = BeautifulSoup(response_tests1.text, 'lxml')
+    text_tests_1.append(soup_tests1.find_all('span'))
+    if i != 0:
+        texts_tests_1.append(f'{i}. {text_tests_1[i][4].text}')
+string_tests_1 = '\n'.join(texts_tests_1)
+
+url_tests_2 = f'https://puzzle-english.com/level-test/english-grammar-test'
+response_tests_2 = requests.get(url_tests_2)
+soup_tests_2 = BeautifulSoup(response_tests_2.text, 'lxml')
+links_tests_2 = soup_tests_1.find_all(class_="col-xs-12 puzzle-col-smx-6 col-sm-3 puzzle_mb_20")
+link_tests_2 = []
+text_tests_2 = []
+texts_tests_2 = []
+for i in range(len(links_tests_2)):
+    link_tests_2.append(f'https://puzzle-english.com{links_tests_1[i].find("a").get("href")}')
+for i in range(len(link_tests_2)):
+    url_tests2 = link_tests_2[i]
+    response_tests2 = requests.get(url_tests2)
+    soup_tests2 = BeautifulSoup(response_tests2.text, 'lxml')
+    text_tests_2.append(soup_tests2.find_all('span'))
+    if i != 0:
+        texts_tests_2.append(f'{i}. {text_tests_1[i][4].text}')
+string_tests_2 = '\n'.join(texts_tests_2)
+
+url_tests_3 = f'https://puzzle-english.com/level-test/english-grammar-test'
+response_tests_3 = requests.get(url_tests_3)
+soup_tests_3 = BeautifulSoup(response_tests_3.text, 'lxml')
+links_tests_3 = soup_tests_3.find_all(class_="col-xs-32 puzzle-col-smx-6 col-sm-3 puzzle_mb_20")
+link_tests_3 = []
+text_tests_3 = []
+texts_tests_3 = []
+for i in range(len(links_tests_3)):
+    link_tests_3.append(f'https://puzzle-english.com{links_tests_3[i].find("a").get("href")}')
+for i in range(len(link_tests_3)):
+    url_tests3 = link_tests_3[i]
+    response_tests3 = requests.get(url_tests3)
+    soup_tests3 = BeautifulSoup(response_tests3.text, 'lxml')
+    text_tests_3.append(soup_tests3.find_all('span'))
+    if i != 0:
+        texts_tests_3.append(f'{i}. {text_tests_3[i][4].text}')
+string_tests_3 = '\n'.join(texts_tests_3)
+
+url_tests_4 = f'https://puzzle-english.com/level-test/english-grammar-test'
+response_tests_4 = requests.get(url_tests_4)
+soup_tests_4 = BeautifulSoup(response_tests_4.text, 'lxml')
+links_tests_4 = soup_tests_4.find_all(class_="col-xs-42 puzzle-col-smx-6 col-sm-4 puzzle_mb_20")
+link_tests_4 = []
+text_tests_4 = []
+texts_tests_4 = []
+for i in range(len(links_tests_4)):
+    link_tests_4.append(f'https://puzzle-english.com{links_tests_4[i].find("a").get("href")}')
+for i in range(len(link_tests_4)):
+    url_tests4 = link_tests_4[i]
+    response_tests4 = requests.get(url_tests4)
+    soup_tests4 = BeautifulSoup(response_tests4.text, 'lxml')
+    text_tests_4.append(soup_tests4.find_all('span'))
+    if i != 0:
+        texts_tests_4.append(f'{i}. {text_tests_4[i][4].text}')
+string_tests_4 = '\n'.join(texts_tests_4)
 
 # for i in range(28):
 #     try:
